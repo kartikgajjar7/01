@@ -4,6 +4,10 @@ import { Input } from "@/components/ui/input";
 import NavigationMenuDemo from "@/components/ui/navlinks";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Third from "@/components/ui/third";
+import Fourth from "@/components/ui/fourth";
+import Fifth from "@/components/ui/fifth";
+import Second from "@/components/ui/second";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -28,18 +32,18 @@ export default function Home() {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <div className="mt-6">
-                <NavigationMenuDemo />
-              </div>
-            </SheetContent>
-          </Sheet>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <NavigationMenuDemo isMobile={true} />
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
         <Button
           variant="outline"
@@ -102,6 +106,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Second />
+      <Third />
+      <Fourth />
+      <Fifth />
     </div>
   );
 }
