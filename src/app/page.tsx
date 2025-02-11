@@ -12,8 +12,9 @@ import Smartphone from "@/components/ui/Smartphone";
 import { Footer } from "@/components/ui/footer";
 import SecondHeroSection from "@/components/ui/herp";
 import Dotcrousel from "@/components/ui/dotcrousel";
+import GallerySection from "@/components/ui/complex";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
-
+import Middle from "@/components/ui/middle";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-transparent">
@@ -23,8 +24,11 @@ export default function Home() {
       <Fourth />
       <Fifth />
       <Sixth />
+
       <QuoteForm />
       <Smartphone />
+      <GallerySection />
+      <Middle />
       <TestimonialCarousel />
       <Seventh />
       <Dotcrousel />
