@@ -66,23 +66,22 @@ export default function NavigationMenuDemo() {
                   >
                     <Icons.logo className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Lorem, ipsum.
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="loremasdf">
+                Lorem ipsum dolor sit amet consectetur.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Loremsadmfm">
+                Lorem ipsum dolor sit amet.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="loerkskf">
+                Lorem ipsum dolor sit amet consectetur.
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -93,24 +92,13 @@ export default function NavigationMenuDemo() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
+              {components.map((component, i) => (
+                <ListItem key={i} title={component.title} href={component.href}>
                   {component.description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

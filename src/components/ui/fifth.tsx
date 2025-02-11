@@ -1,3 +1,4 @@
+import Image from "next/image";
 function Fifth() {
   return (
     <div className=" mt-20 lg:mt-40">
@@ -9,70 +10,91 @@ function Fifth() {
             consectetur. Commodo leo amet.
           </h2>
 
-          {/* Brand Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center">
             {/* Row 1 */}
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hero_MotoCorp.svg/2560px-Hero_MotoCorp.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/hro.png"
               alt="Hero"
               className="h-12 object-contain"
             />
-            <img
+            <Image
+              width={86}
+              height={97}
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/2560px-Honda_Logo.svg.png"
               alt="Honda"
               className="h-12 object-contain"
             />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Bajaj_Auto_Logo.svg/2560px-Bajaj_Auto_Logo.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/bjaj.png"
               alt="Bajaj"
               className="h-12 object-contain"
             />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/TVS_Motor_Company_Logo.svg/2560px-TVS_Motor_Company_Logo.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/tvs.png"
               alt="TVS"
               className="h-12 object-contain"
             />
 
-            {/* Row 2 */}
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Royal_Enfield_logo.svg/2560px-Royal_Enfield_logo.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/enfild.png"
               alt="Royal Enfield"
               className="h-12 object-contain"
             />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Yamaha_Motor_logo.svg/2560px-Yamaha_Motor_logo.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/yamaha.png"
               alt="Yamaha"
               className="h-12 object-contain"
             />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/KTM_logo.svg/2560px-KTM_logo.svg.png"
+            <Image
+              width={86}
+              height={97}
+              src="/ktm.png"
               alt="KTM"
               className="h-12 object-contain"
             />
-            <img
-              src="https://ather.global/content/dam/ather/global/logo/ather-logo-black.svg"
+            <Image
+              width={86}
+              height={97}
+              src="/ather.jpeg"
               alt="Ather"
               className="h-12 object-contain"
             />
 
-            {/* Row 3 */}
-            <img
-              src="https://www.olacabs.com/images/ola-electric.svg"
+            <Image
+              width={86}
+              height={97}
+              src="/ola.png"
               alt="Ola Electric"
               className="h-12 object-contain"
             />
-            <img
-              src="https://www.revolt.in/images/logo.svg"
+            <Image
+              width={86}
+              height={97}
+              src="/revolt.png"
               alt="Revolt"
               className="h-12 object-contain"
             />
-            <img
-              src="https://ultraviolette.com/images/logo.svg"
+            <Image
+              width={86}
+              height={97}
+              src="/ultra.jpeg"
               alt="Ultraviolette"
               className="h-12 object-contain"
             />
-            <img
-              src="https://www.torkmotors.com/images/logo.svg"
+            <Image
+              width={86}
+              height={97}
+              src="/ktm.png"
               alt="Tork Motors"
               className="h-12 object-contain"
             />
@@ -98,9 +120,9 @@ function Fifth() {
           </div>
 
           {/* Grid Section */}
-          <div className="grid px-28 grid-cols-1 md:grid-cols-2 place-items-center  gap-8">
+          <div className="grid bg-white px-28 grid-cols-1 md:grid-cols-2 place-items-center  gap-8">
             {/* Card 1 */}
-            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
+            <div className="space-y-4 bg-white px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="Colorful buildings at sunset"
@@ -122,7 +144,7 @@ function Fifth() {
             </div>
 
             {/* Card 2 */}
-            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
+            <div className="space-y-4 bg-white px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="White buddha statue"
@@ -144,7 +166,7 @@ function Fifth() {
             </div>
 
             {/* Card 3 */}
-            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
+            <div className="space-y-4 bg-white px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1490731727228-d56f39758d0e?auto=format&fit=crop&w=600&h=400"
                 alt="Person in kimono with wind"
@@ -166,7 +188,7 @@ function Fifth() {
             </div>
 
             {/* Card 4 */}
-            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
+            <div className="space-y-4 bg-white px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="Orange fruits on tree"

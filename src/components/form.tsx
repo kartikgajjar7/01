@@ -62,7 +62,7 @@ export default function QuoteForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="mx-auto max-w-3xl space-y-6"
+          className="mx-auto font-sans font-normal max-w-3xl space-y-6"
         >
           <div className="grid gap-6 md:grid-cols-2">
             <FormField
@@ -229,20 +229,8 @@ export default function QuoteForm() {
                 </FormControl>
                 <div className="space-y-1 leading-none">
                   <FormLabel>
-                    By submitting this form you agree to our{" "}
-                    <Link
-                      href="/terms"
-                      className="text-primary hover:underline"
-                    >
-                      Terms of Service
-                    </Link>{" "}
-                    and{" "}
-                    <Link
-                      href="/privacy"
-                      className="text-primary hover:underline"
-                    >
-                      Privacy Policy
-                    </Link>
+                    By submitting this form you agree to our Terms of Service
+                    and Privacy Policy
                   </FormLabel>
                   <FormMessage />
                 </div>

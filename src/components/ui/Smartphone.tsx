@@ -32,7 +32,7 @@ function Smartphone() {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[500px] w-full flex items-center justify-center md:justify-end">
+          <div className=" hidden relative h-[500px] w-full lg:flex items-center justify-center md:justify-end">
             <img
               src="./hand.png"
               alt="Hand holding smartphone"
