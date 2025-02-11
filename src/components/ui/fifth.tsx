@@ -1,9 +1,9 @@
 function Fifth() {
   return (
-    <div className="mt-40">
+    <div className=" mt-20 lg:mt-40">
       <div className="py-2  bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-[42px] leading-[49.22px] font-bold text-center text-gray-900 mb-20 uppercase">
+          <h2 className="text-2xl  lg:text-[42px] lg:leading-[49.22px] font-bold text-center text-gray-900 mb-20 uppercase">
             Lorem ipsum dolor sit amet
             <br />
             consectetur. Commodo leo amet.
@@ -100,7 +100,7 @@ function Fifth() {
           {/* Grid Section */}
           <div className="grid px-28 grid-cols-1 md:grid-cols-2 place-items-center  gap-8">
             {/* Card 1 */}
-            <div className="space-y-4 h-[560px] w-[445px]">
+            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="Colorful buildings at sunset"
@@ -122,7 +122,7 @@ function Fifth() {
             </div>
 
             {/* Card 2 */}
-            <div className="space-y-4 h-[560px] w-[445px]">
+            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="White buddha statue"
@@ -144,7 +144,7 @@ function Fifth() {
             </div>
 
             {/* Card 3 */}
-            <div className="space-y-4 h-[560px] w-[445px]">
+            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1490731727228-d56f39758d0e?auto=format&fit=crop&w=600&h=400"
                 alt="Person in kimono with wind"
@@ -166,7 +166,7 @@ function Fifth() {
             </div>
 
             {/* Card 4 */}
-            <div className="space-y-4 h-[560px] w-[445px]">
+            <div className="space-y-4 px-5 w-screen lg:h-[560px] lg:w-[445px]">
               <img
                 src="https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&w=600&h=400"
                 alt="Orange fruits on tree"

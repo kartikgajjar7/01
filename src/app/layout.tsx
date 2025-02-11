@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import { Roboto_Condensed } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const condensed_roboto = Roboto_Condensed({
   weight: ["700"],
@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${condensed_roboto.className}  antialiased`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

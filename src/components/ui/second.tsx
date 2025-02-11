@@ -87,7 +87,7 @@ export default function Second() {
       // Gradient bar animation
       gsap.from(gradientRef.current, {
         scaleX: 0,
-        duration: 1.5,
+        duration: 7.5,
         ease: "power4.out",
         scrollTrigger: {
           trigger: containerRef.current,
@@ -103,12 +103,12 @@ export default function Second() {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen relative border shadow-[0_4px_25px_rgba(0,0,0,0.15)] border-[#D4D4D4] ml-10 mt-20 bg-white"
+      className="min-h-screen relative border shadow-[0_4px_25px_rgba(0,0,0,0.15)] border-[#D4D4D4] px-8 pt-4 lg:ml-10 mt-20 bg-white"
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mx-auto  sm:px-6 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column */}
-          <div className="space-y-10">
+          <div className="lg:space-y-10">
             <div>
               <p className="text-[#3B5EE0] text-2xl font- mb-3">
                 Lorem ipsum dolor sit
@@ -123,7 +123,7 @@ export default function Second() {
               </h1>
               <p
                 ref={paragraphRef}
-                className="mt-5 text-lg text-[18px] leading-relaxed text-gray-600"
+                className="mt-5 lg:text-lg text-[18px] lg:leading-relaxed text-gray-600"
               >
                 Lorem ipsum dolor sit amet consectetur. Amet sodales sociis
                 facilisis donec dui. Mi porttitor ut aliquam mattis maecenas
@@ -141,7 +141,7 @@ export default function Second() {
                   className="w-[146x] h-[146px] object-cover  flex-shrink-0"
                 />
                 <div className="flex items-center">
-                  <p className="text-gray-900 text-[18px] leading-relaxed">
+                  <p className="text-gray-900 lg:text-[18px] lg:leading-relaxed">
                     Lorem ipsum dolor sit amet consectetur. Vestibulum ornare
                     fermentum feugiat.
                   </p>
@@ -155,7 +155,7 @@ export default function Second() {
                     className="w-[146x] h-[146px] object-cover  flex-shrink-0"
                   />
                   <div className="flex items-center">
-                    <p className="text-gray-900 text-[18px] leading-relaxed">
+                    <p className="text-gray-900 lg:text-[18px] lg:leading-relaxed">
                       Lorem ipsum dolor sit amet consectetur. Dictum at ac
                       tellus faucibus urna ullamcorper id dui cursus. Venenatis.
                     </p>
@@ -169,7 +169,7 @@ export default function Second() {
                       className="w-[146x] h-[146px] object-cover  flex-shrink-0"
                     />
                     <div className="flex items-center">
-                      <p className="text-gray-900 text-[18px] leading-relaxed">
+                      <p className="text-gray-900 lg:text-[18px] lg:leading-relaxed">
                         Lorem ipsum dolor sit amet consectetur. Vestibulum nisl
                         morbi metus gravida eu facilisi enim. Ut diam auctor
                         tortor tincidunt.
@@ -199,7 +199,7 @@ export default function Second() {
               ref={imageRef}
               src="https://s3-alpha-sig.figma.com/img/3f33/0e7e/2503a18db023ca88d2372ec66ab52634?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U11bt~~LKk5vQYNA7XUZzIjdVWbZenTI0IAbTi2zOcR0jK2xjNZEaDXWV5sJdEWeeG-qYnH1yav9tIpVhtc6PPnCWjzMNKYzWAUSdEw1qk5vGCtVOeVpXDxhjkw8sY6sbGyTc~ZQ69WUnNRxRlnNqZjr1wgdWVn7AUAcCShqorQVq6Chk~aS6jZn0DRte02vJnam2gaSusINT8uFEnbEZt2J5AEr1hA1xmihH8GaJ6croE-vFwsoRwI9MRNvqRpAe3qyafCdpHnLw6n~nEaV1pbkkOu8HXB3p46oH2rd~qz2r-Wm45pKQghhY1OWFG4qet8eTbknUfFPTeiY4TqLrA__"
               alt="Row of motorcycles"
-              className="w-full h-[700px] object-cover rounded-lg shadow-xl"
+              className="w-full mb-5 lg:h-[700px] object-cover rounded-lg shadow-xl"
             />
           </div>
         </div>

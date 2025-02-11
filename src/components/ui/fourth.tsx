@@ -3,7 +3,7 @@ import { Bike } from "lucide-react";
 
 function Fourth() {
   return (
-    <div className="bg-white mt-40 h-[652px]">
+    <div className="bg-white mt-16 px-2 lg:mt-40 h-[652px]">
       {/* Hero Section */}
       <div className="relative h-full">
         {/* Background Image */}
@@ -27,12 +27,12 @@ function Fourth() {
           {/* Hero Text */}
           <div className="flex items-center justify-center h-full -mt-20">
             <div className="max-w-4xl text-white text-center">
-              <h1 className="text-[42px] font-bold leading-tight uppercase">
+              <h1 className=" text-xl text-center lg:text-[42px] font-bold leading-tight uppercase">
                 Lorem ipsum dolor sit amet consectetur. Quis adipiscing purus
                 egestas aliquam viverra mi.
               </h1>
               <div className="mt-8 space-y-6 text-lg">
-                <p className="text-gray-200 font-extrabold  text-[18px]">
+                <p className="text-gray-200 text-center font-extrabold  text-[18px]">
                   Lorem ipsum dolor sit amet consectetur. Mattis justo euismod
                   volutpat vestibulum nisi at ac risus amet. Mi accumsan
                   sagittis justo pellentesque id sed. Id tellus id luctus id. At
