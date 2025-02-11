@@ -202,7 +202,8 @@ const testimonials: Testimonial[] = [
     text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.",
     author: {
       name: "Jane Cooper",
-      image: "/api/placeholder/40/40",
+      image:
+        "https://t4.ftcdn.net/jpg/05/11/55/91/360_F_511559113_UTxNAE1EP40z1qZ8hIzGNrB0LwqwjruK.jpg",
     },
   },
   {
@@ -210,7 +211,8 @@ const testimonials: Testimonial[] = [
     text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer.",
     author: {
       name: "Ralph Edwards",
-      image: "/api/placeholder/40/40",
+      image:
+        "https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg",
     },
   },
   {
@@ -218,7 +220,8 @@ const testimonials: Testimonial[] = [
     text: "Viverra lacus suspendisse elit, adipiscing orci, non turpis etiam sapien. Viverra blandit sem neque pretium. Duis enim semper fermentum consequat aenean libero.",
     author: {
       name: "Courtney Henry",
-      image: "/api/placeholder/40/40",
+      image:
+        "https://cdn.dribbble.com/users/3293507/screenshots/14667603/media/d8cbe035a61f64afdf6deabca5182842.jpg?resize=400x300&vertical=center",
     },
   },
   {
@@ -226,7 +229,8 @@ const testimonials: Testimonial[] = [
     text: "Hendrerit augue ut nunc, quis integer netus. Sed rhoncus magnis habitasse. Egestas amet habitasse tellus ornare. Hendrerit senectus. Mauris eget vitae praesent neque.",
     author: {
       name: "Cameron Wilson",
-      image: "/api/placeholder/40/40",
+      image:
+        "https://cdn.dribbble.com/users/3293507/screenshots/14667603/media/d8cbe035a61f64afdf6deabca5182842.jpg?resize=400x300&vertical=center",
     },
   },
 ];
