@@ -38,7 +38,7 @@ export default function GallerySection() {
             </div>
             <div className="flex-[2] relative h-[290px]">
               <Image
-                src="/00.png"
+                src="/put.png"
                 alt="Additional content"
                 layout="fill"
                 objectFit="cover"
