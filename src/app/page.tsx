@@ -16,7 +16,7 @@ import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-transparent">
+    <div className="min-h-screen overflow-hidden bg-transparent">
       <First />
       <Second />
       <Third />
