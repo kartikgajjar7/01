@@ -1,3 +1,4 @@
+"use client";
 import First from "@/components/ui/first";
 import Third from "@/components/ui/third";
 import Fourth from "@/components/ui/fourth";
@@ -15,26 +16,49 @@ import Dotcrousel from "@/components/ui/dotcrousel";
 import GallerySection from "@/components/ui/complex";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import Middle from "@/components/ui/middle";
+import { useEffect } from "react";
+import { useState } from "react";
+import LoadingSkeleton from "@/components/ui/load";
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup function to clear timeout if component unmounts
+  }, []);
   return (
     <div className="min-h-screen overflow-hidden bg-transparent">
-      <First />
-      <Second />
-      <Third />
-      <Fourth />
-      <Fifth />
-      <Sixth />
-
-      <QuoteForm />
-      <Smartphone />
-      <GallerySection />
-      <Middle />
-      <TestimonialCarousel />
-      <Seventh />
-      <Dotcrousel />
-      <FAQ />
-      <SecondHeroSection />
-      <Footer />
+      {loading ? (
+        <div className="flex justify-center items-center h-screen text-2xl font-bold">
+          <LoadingSkeleton />
+        </div>
+      ) : (
+        <MainContent />
+      )}
     </div>
   );
 }
+
+const MainContent = () => (
+  <>
+    <First />
+    <Second />
+    <Third />
+    <Fourth />
+    <Fifth />
+    <Sixth />
+    <QuoteForm />
+    <Smartphone />
+    <GallerySection />
+    <Middle />
+    <TestimonialCarousel />
+    <Seventh />
+    <Dotcrousel />
+    <FAQ />
+    <SecondHeroSection />
+    <Footer />
+  </>
+);
