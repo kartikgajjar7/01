@@ -1,40 +1,75 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Svg from "./svg";
+import { useState } from "react";
 export default function Seventh() {
+  const [activeTab, setActiveTab] = useState("Research");
+
+  const tabContent = {
+    Research: {
+      text: "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+      linkText: "Check research tools",
+    },
+    Plan: {
+      text: "Planning phase content goes here. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+      linkText: "View planning tools",
+    },
+    Design: {
+      text: "Design stage information. Habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu.",
+      linkText: "Explore design resources",
+    },
+  };
   return (
-    <main className=" z-50  relative">
-      <section className="p-12  md:py-16 lg:py-20">
+    <main className="z-50 relative">
+      <section className="p-12 md:py-16 lg:py-20">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-12">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight">
               LOREM IPSUM DOLOR SIT AMET
             </h1>
-            <div className="inline-flex  rounded-lg border">
-              <button className="px-4 w-[90px] border-[#CBD5E1] lg:w-[200.67px] h-[48px] py-2 text-sm font-medium rounded-l-lg bg-slate-100 shadow-sm">
+            <div className="inline-flex rounded-lg border">
+              <button
+                onClick={() => setActiveTab("Research")}
+                className={`px-4 w-[90px] border-[#CBD5E1] lg:w-[200.67px] h-[48px] py-2 text-sm font-medium rounded-l-lg transition-colors ${
+                  activeTab === "Research"
+                    ? "bg-white shadow-sm border-b-0"
+                    : "bg-slate-100"
+                }`}
+              >
                 Research
               </button>
-              <button className="px-4 w-[90px] py-2 border-[#CBD5E1] lg:w-[200.67px] h-[48px]   text-sm font-medium">
+              <button
+                onClick={() => setActiveTab("Plan")}
+                className={`px-4 w-[90px] py-2 border-[#CBD5E1] lg:w-[200.67px] h-[48px] text-sm font-medium transition-colors ${
+                  activeTab === "Plan"
+                    ? "bg-white shadow-sm border-b-0"
+                    : "bg-slate-100"
+                }`}
+              >
                 Plan
               </button>
-              <button className="px-4 w-[90px] py-2 border-[#CBD5E1] lg:w-[200.67px] h-[48px]  text-sm font-medium rounded-r-lg">
+              <button
+                onClick={() => setActiveTab("Design")}
+                className={`px-4 w-[90px] py-2 border-[#CBD5E1] lg:w-[200.67px] h-[48px] text-sm font-medium rounded-r-lg transition-colors ${
+                  activeTab === "Design"
+                    ? "bg-white shadow-sm border-b-0"
+                    : "bg-slate-100"
+                }`}
+              >
                 Design
               </button>
             </div>
-            <div className="absolute  -z-20 top-[5%] left-[45%]">
+            <div className="absolute -z-20 top-[5%] left-[45%]">
               <Svg />
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-              Neque pellentesque donec et tellus ac varius tortor, bibendum.
-              Nulla felis ac turpis at amet. Purus malesuada placerat arcu at
-              enim elit in accumsan.
+              {tabContent[activeTab].text}
             </p>
             <a
               href="#"
               className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
             >
-              Check tools
+              {tabContent[activeTab].linkText}
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </div>
@@ -43,12 +78,11 @@ export default function Seventh() {
               src="https://s3-alpha-sig.figma.com/img/58a2/92f9/cc88b8d1b68a74ca24a02fb0524db98b?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TZ4LNZuVbeC6hkfH~8lCHVfN-QE~muoSkZrBUjfBBmQ7ryBue4GfiJK3f3MNgVmb2XHWptjVoIkbV8cxanvVxfuJN16EBtFZ~0prQAtnpir8hskAKOhJ7l6OAl3gGGL5lrQsnedIcztxHRfhqLR4dABx-8T1CZUspgRDFeeWI52~IboNgEzpkRJYHWnkdr6fMiuHFkUipc~znNDR4cydwdxeMtABp6MybTMp1qH38Z2r0eEuw5fhm7TloO5Mu-oMnFD8BEHQJlJqMUHZUFl4Zfc-OCsHcIW2K4BNH1zsVEkOhmLdExQSXjQ3~IwNgsdWiBm9BoKV~ec749TkzqKIhQ__"
               alt="Handshake representing business agreement"
               fill
-              className=" lg:w-full  rounded-lg"
+              className="lg:w-full rounded-lg"
             />
           </div>
         </div>
       </section>
-
       {/* Middle Section */}
       <section className=" p-12 h-[724px] py-12 md:py-16 lg:py-20 mt-12  lg:mt-40 bg-[#F1F1F1] relative ">
         <div className="grid md:grid-cols-2 gap-12 items-center">
